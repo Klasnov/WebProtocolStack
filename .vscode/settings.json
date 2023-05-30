@@ -4,6 +4,7 @@
         "arp.h": "c",
         "ethernet.h": "c",
         "net.h": "c",
-        "icmp.h": "c"
+        "icmp.h": "c",
+        "map.h": "c"
     }
 }
