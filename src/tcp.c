@@ -368,7 +368,7 @@ void tcp_in(buf_t *buf, uint8_t *src_ip)
     /*
     7、从TCP头部字段中获取对方的窗口大小，注意大小端转换
     */
-   uint16_t winSize = swap16(hdr->window_size16);
+    uint16_t winSize = swap16(hdr->window_size16);
 
     /*
     8、如果为TCP_LISTEN状态，则需要完成如下功能：
@@ -384,8 +384,22 @@ void tcp_in(buf_t *buf, uint8_t *src_ip)
         （6）调用tcp_send将txbuf发送出去，也就是回复一个tcp_flags_ack_syn（SYN+ACK）报文
         （7）处理结束，返回。
     */
-
-    // TODO
+    if (connect->state == TCP_LISTEN)
+    {
+        if (flags.rst)
+        {
+            release_tcp_connect(connect);
+            map_delete(&connect_table, &key);
+            return;
+        }
+        if (!flags.syn)
+        {
+            connect->next_seq = 0;
+            connect->ack = getSeq + 1;
+            buf_init(&txbuf, 0);
+            tcp_send(&txbuf, connect, tcp_flags_ack_rst);
+        }
+    }
 
     /*
     9、检查接收到的sequence number，如果与ack序号不一致,则reset_tcp复位通知。
