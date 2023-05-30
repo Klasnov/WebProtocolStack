@@ -1,0 +1,149 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0/include",
+						"D:/TDMGCC/include",
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed",
+						"D:/TDMGCC/x86_64-w64-mingw32/include"
+					],
+					"linkDirectories" : 
+					[
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0",
+						"D:/TDMGCC/lib/gcc",
+						"D:/TDMGCC/x86_64-w64-mingw32/lib",
+						"D:/TDMGCC/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"mingw32",
+						"gcc",
+						"pthread",
+						"gcc",
+						"kernel32",
+						"moldname",
+						"mingwex",
+						"kernel32",
+						"pthread",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"mingw32",
+						"gcc",
+						"pthread",
+						"gcc",
+						"kernel32",
+						"moldname",
+						"mingwex",
+						"kernel32"
+					]
+				},
+				"path" : "D:/TDMGCC/bin/gcc.exe",
+				"version" : "10.3.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++",
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/x86_64-w64-mingw32",
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0/include/c++/backward",
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0/include",
+						"D:/TDMGCC/include",
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed",
+						"D:/TDMGCC/x86_64-w64-mingw32/include"
+					],
+					"linkDirectories" : 
+					[
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0",
+						"D:/TDMGCC/lib/gcc",
+						"D:/TDMGCC/x86_64-w64-mingw32/lib",
+						"D:/TDMGCC/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"D:/TDMGCC/lib/gcc/x86_64-w64-mingw32/10.3.0/libstdc++.a",
+						"mingw32",
+						"gcc",
+						"pthread",
+						"gcc",
+						"kernel32",
+						"moldname",
+						"mingwex",
+						"kernel32",
+						"pthread",
+						"advapi32",
+						"shell32",
+						"user32",
+						"kernel32",
+						"mingw32",
+						"gcc",
+						"pthread",
+						"gcc",
+						"kernel32",
+						"moldname",
+						"mingwex",
+						"kernel32"
+					]
+				},
+				"path" : "D:/TDMGCC/bin/g++.exe",
+				"version" : "10.3.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"implicit" : {},
+				"path" : "D:/TDMGCC/bin/windres.exe"
+			},
+			"language" : "RC",
+			"sourceFileExtensions" : 
+			[
+				"rc",
+				"RC"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
